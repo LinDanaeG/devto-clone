@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEV Community</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="./images/about.svg" />
+  </head>
+  <body class="vw-100 bg-body-secondary d-flex justify-content-center">
+    <header
+      class="fixed-top w-100 z-1 d-flex justify-content-center align-items-center bg-white"
+    >
+      <nav class="navbar navbar-expand-lg bg-body-white px-2 w-75">
+        <div
+          class="container-fluid justify-content-start align-items-center p-0"
+        >
+          <div>
+            <button class="navbar-toggler ms-3 d-sm-block d-md-none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                role="img"
+                aria-labelledby="a7eope067dvw7s8jyrmk0mxikihvo9e7"
+                class="crayons-icon"
+              >
+                <title id="a7eope067dvw7s8jyrmk0mxikihvo9e7">
+                  Navigation menu
+                </title>
+                <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
+              </svg>
+            </button>
+          </div>
+          <a href="#">
+            <img class="navbar-icon" src="./images/dev-logo.png" />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <div
+              class="border rounded d-none d-md-block ms-2 d-lg-flex align-items-center flex-grow-1"
+            >
+              <button class="btn border-0">
+                <svg class="" width="24" height="24">
+                  <path
+                    d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z"
+                  ></path>
+                </svg>
+              </button>
+
+              <input
+                class="position-relative no-border border-0 input-search"
+                type="text"
+                placeholder="Search..."
+              />
+            </div>
+            <div class="d-inline placeholder bg-white position-absolute">
+              <a
+                class="text-decoration-none text-body-secondary indicator"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Powered by
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Layer_1"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 500 500.34"
+                >
+                  <path
+                    class="cls-1"
+                    d="M250,0C113.38,0,2,110.16,.03,246.32c-2,138.29,110.19,252.87,248.49,253.67,42.71,.25,83.85-10.2,120.38-30.05,3.56-1.93,4.11-6.83,1.08-9.52l-23.39-20.74c-4.75-4.22-11.52-5.41-17.37-2.92-25.5,10.85-53.21,16.39-81.76,16.04-111.75-1.37-202.04-94.35-200.26-206.1,1.76-110.33,92.06-199.55,202.8-199.55h202.83V407.68l-115.08-102.25c-3.72-3.31-9.43-2.66-12.43,1.31-18.47,24.46-48.56,39.67-81.98,37.36-46.36-3.2-83.92-40.52-87.4-86.86-4.15-55.28,39.65-101.58,94.07-101.58,49.21,0,89.74,37.88,93.97,86.01,.38,4.28,2.31,8.28,5.53,11.13l29.97,26.57c3.4,3.01,8.8,1.17,9.63-3.3,2.16-11.55,2.92-23.6,2.07-35.95-4.83-70.39-61.84-127.01-132.26-131.35-80.73-4.98-148.23,58.18-150.37,137.35-2.09,77.15,61.12,143.66,138.28,145.36,32.21,.71,62.07-9.42,86.2-26.97l150.36,133.29c6.45,5.71,16.62,1.14,16.62-7.48V9.49C500,4.25,495.75,0,490.51,0H250Z"
+                  ></path>
+                </svg>
+                Algolia</a
+              >
+            </div>
+          </div>
+          <div class="button-container d-flex justify-content-end flex-grow-1">
+            <div>
+              <ul class="d-flex align-items-center m-auto">
+                <li class="list-group d-none d-sm-block me-2">
+                  <button class="btn btn-outline-success" type="submit">
+                    Create Post
+                  </button>
+                </li>
+                <li class="list-group p-1">
+                  <a
+                    href="/notifications"
+                    id="notifications-link"
+                    class="c-link c-link--icon-alone c-link--block mx-1"
+                    aria-label="Notifications"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="21"
+                      viewBox="0 0 24 24"
+                      role="img"
+                      aria-labelledby="aj8w6drp9zy7hg2640blyyden52a7e2e"
+                      class="crayons-icon"
+                    >
+                      <title id="aj8w6drp9zy7hg2640blyyden52a7e2e">
+                        Notifications
+                      </title>
+                      <path
+                        d="M20 17h2v2H2v-2h2v-7a8 8 0 1116 0v7zm-2 0v-7a6 6 0 10-12 0v7h12zm-9 4h6v2H9v-2z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li class="list-group">
+                  <div class="avatar mx-1 rounded-circle">
+                    <button
+                      type="button"
+                      class="p-0 avatar rounded-circle button"
+                      id="member-menu-button"
+                      aria-label="Navigation menu"
+                      aria-expanded="false"
+                    ></button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main
+      class="w-75 d-flex position-absolute mt-3 justify-content-center p-5 main px-2"
+    >
+      <div class="d-flex justify-content-center main-container w-100">
+        <div class="cards-container col-3 d-flex flex-column d-none d-sm-block">
+          <ul class="nav d-flex flex-column">
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">🏚️ Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">🎙️ Podcasts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">🎥 Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">🔖Tags</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">💡 FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true"
+                >🛍️ Forem Shop</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true"
+                >❤️ Advertise on DEV</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">
+                <img src="./images/dev-logo.png" class="logo-about" /> About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">📯 Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">📖 Guides</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true"
+                >🤔 Software comparisons</a
+              >
+            </li>
+          </ul>
+          <ul class="nav d-flex flex-column">
+            <li class="nav-item">
+              <a class="nav-link disabled fw-bold" aria-disabled="true"
+                >Other</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true"
+                >👍Code of Conduct</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true"
+                >🤓 Privacy Policy</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true"
+                >👀 Terms of use</a
+              >
+            </li>
+          </ul>
+          <nav
+            class="d-flex justify-content-around mt-4 mb-4 w-75"
+            id="Socials"
+          >
+            <a href="" class="p-2"><img src="images/twiter.svg" alt="" /></a>
+            <a href="" class="p-2"><img src="images/facebook.svg" alt="" /></a>
+            <a href="" class="p-2"><img src="images/github.svg" alt="" /></a>
+            <a href="" class="p-2"><img src="images/insta.svg" alt="" /></a>
+            <a href="" class="p-2"><img src="images/twitch.svg" alt="" /></a>
+            <a href="" class="p-2"><img src="images/mastodon.svg" alt="" /></a>
+          </nav>
+          <ul class="nav d-flex flex-column list-tags">
+            <li class="nav-item">
+              <a class="nav-link disabled fw-bold" aria-disabled="true"
+                >My Tags</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">#laravel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">#flutter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">#git</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">#chatgpt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">#ubuntu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">#swift</a>
+            </li>
+          </ul>
+          <div class="card p-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <h4 class="fw-light fs-5">DEV Community</h4>
+              <p class="fs-3 fw-light">...</p>
+            </div>
+            <img
+              src="images/DEV Community.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0 mt-5">
+              <p class="card-text fw-bold">
+                <span><a href="#">Fill out this survey</a></span>
+                and help us moderate our community by becoming a tag moderator
+                here at DEV.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards__container">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Relevant</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Latest</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Top</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="card text-dark-emphasis py-4 px-2">
+            <h4 class="fw-light small-text">
+              👋 The next DEV Challenge is live
+            </h4>
+            <img
+              src="./images/challenges.avif"
+              class="card-img-top px-5 my-2"
+              alt="..."
+            />
+            <div class="card-body px-5">
+              <h5 class="card-title">The Frontend Challenge is back!</h5>
+              <p class="card-text">
+                Join us for a fresh and sunny Frontend Challenge, with new
+                badges and new ways to win! 🌞
+              </p>
+            </div>
+            <button class="btn btn-outline-success mx-5" type="submit">
+              See the prompts
+            </button>
+          </div>
+        </div>
+        <div
+          class="cards__container col-3 d-lg-flex flex-column gap-3 d-none d-md-block"
+        >
+          <div class="card text-dark-emphasis">
+            <div class="card-header bg-white p-3">
+              <h5 class="card-title fw-bold">Active discussions</h5>
+              <p class="card-text small-paragraph">Welcome Thread - v278</p>
+              <a
+                href="#"
+                class="list-group-link d-block text-decoration-none text-body-secondary"
+                >149 Comments</a
+              >
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item p-3">
+                I'm lost. Advice for a 2 year average programmer?
+
+                <a
+                  href="#"
+                  class="list-group-link d-block text-decoration-none text-body-secondary"
+                  >41 Comments</a
+                >
+              </li>
+
+              <li class="list-group-item p-3">
+                Meme Monday
+                <a
+                  href="#"
+                  class="list-group-link d-block text-decoration-none text-body-secondary"
+                  >54 Comments</a
+                >
+              </li>
+              <li class="list-group-item p-3">
+                What was your win this week? 🙌
+
+                <a
+                  href="#"
+                  class="list-group-link d-block text-decoration-none text-body-secondary"
+                  >13 Comments</a
+                >
+              </li>
+              <li class="list-group-item p-3">
+                Share Your Experience Loudly and Often
+
+                <a
+                  href="#"
+                  class="list-group-link d-block text-decoration-none text-body-secondary"
+                  >10 Comments</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="card text-dark-emphasis">
+            <div class="card-header bg-white p-3">
+              <h5 class="card-title fw-bold">#discuss</h5>
+              <p class="card-text small-paragraph">
+                Discussion threads targeting the whole community
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item p-3">
+                Meme Monday
+                <a
+                  href="#"
+                  class="list-group-link d-block text-decoration-none text-body-secondary"
+                  >54 Comments</a
+                >
+              </li>
+              <li class="list-group-item p-3">
+                Spiner || community discussion
+
+                <a
+                  href="#"
+                  class="list-group-link d-block text-decoration-none text-body-secondary"
+                  >7 Comments</a
+                >
+              </li>
+              <li class="list-group-item p-3">
+                What are Your Best Tips for Building a Coding Portfolio?
+
+                <a
+                  href="#"
+                  class="list-group-link d-block text-decoration-none text-body-secondary"
+                  >7 Comments</a
+                >
+              </li>
+              <li class="list-group-item p-3">
+                Controlled & Uncontrolled Component
+
+                <a
+                  href="#"
+                  class="list-group-link d-block text-decoration-none text-body-secondary"
+                  >2 Comments</a
+                >
+              </li>
+              <li class="list-group-item p-3">
+                Multitask - Should I stay or should I go?
+
+                <a
+                  href="#"
+                  class="list-group-link d-block text-decoration-none text-body-secondary"
+                  >2 Comments</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
