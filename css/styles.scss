@@ -12,16 +12,14 @@
     max-width: 100vw;
 }
 
-
-.navbar-icon {
-    width: 50px;
-    height: 40px;
-}
-
 .navbar{
     height: 50px;
     --bs-navbar-brand-margin-end: 0;
     --bs-navbar-padding-y: 0.25rem;
+    &-icon {
+        width: 50px;
+        height: 40px;
+    }
 }
 
 .collapse{
@@ -30,6 +28,11 @@
 
 .main{
     gap: 18px;
+    &-container{
+        width: 95%;
+        gap: 15px;
+    
+    }
 }
 
 .indicator{
@@ -37,12 +40,6 @@
     color: #717171;
     background: var(--form-bg);
     padding-left: 3px;
-}
-
-.main-container{
-    width: 95%;
-    gap: 15px;
-
 }
 
 .input-search{
@@ -85,4 +82,23 @@
         background-color: #3B49DF;
         border-color: #3B49DF;
     }
+}
+
+.profile-image{
+    width: 32px;
+    height: 32px;
+}
+
+.width-sections{
+    width: 75%;
+}
+
+@media only screen and (max-width: 992px) {
+    .width-sections{
+        width: 100%;
+        display: flex;
+    }
+
+
+
 }

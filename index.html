@@ -11,12 +11,18 @@
     <header
       class="fixed-top w-100 z-1 d-flex justify-content-center align-items-center bg-white"
     >
-      <nav class="navbar navbar-expand-lg bg-body-white px-2 w-75">
+      <nav class="navbar navbar-expand-lg bg-body-white px-2 width-sections">
         <div
           class="container-fluid justify-content-start align-items-center p-0"
         >
           <div>
-            <button class="navbar-toggler ms-3 d-sm-block d-md-none">
+            <button
+              class="navbar-toggler ms-3 d-sm-block d-md-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -32,10 +38,119 @@
                 <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
               </svg>
             </button>
+            <!-- side bar -->
           </div>
           <a href="#">
             <img class="navbar-icon" src="./images/dev-logo.png" />
           </a>
+
+          <div
+            class="offcanvas offcanvas-start d-lg-none"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                DEV Community
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="nav d-flex flex-column">
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">🏚️ Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true"
+                    >🎙️ Podcasts</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true"
+                    >🎥 Videos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">🔖Tags</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">💡 FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true"
+                    >🛍️ Forem Shop</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true"
+                    >❤️ Advertise on DEV</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">
+                    <img src="./images/dev-logo.png" class="logo-about" /> About
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true"
+                    >📯 Contact</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true"
+                    >📖 Guides</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true"
+                    >🤔 Software comparisons</a
+                  >
+                </li>
+              </ul>
+              <ul class="nav d-flex flex-column">
+                <li class="nav-item">
+                  <a class="nav-link disabled fw-bold" aria-disabled="true"
+                    >Other</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true"
+                    >👍Code of Conduct</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true"
+                    >🤓 Privacy Policy</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true"
+                    >👀 Terms of use</a
+                  >
+                </li>
+              </ul>
+              <nav
+                class="px-3 d-flex justify-content-start gap-3 my-4"
+                id="Socials"
+              >
+                <a href="" twitter><img src="images/twiter.svg" alt="" /></a>
+                <a href=""><img src="images/facebook.svg" alt="" /></a>
+                <a href=""><img src="images/github.svg" alt="" /></a>
+                <a href=""><img src="images/insta.svg" alt="" /></a>
+                <a href=""><img src="images/twitch.svg" alt="" /></a>
+                <a href=""><img src="images/mastodon.svg" alt="" /></a>
+              </nav>
+            </div>
+          </div>
+
+          <!-- fin side bar -->
+
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <div
               class="border rounded d-none d-md-block ms-2 d-lg-flex align-items-center flex-grow-1"
@@ -128,10 +243,14 @@
       </nav>
     </header>
     <main
-      class="w-75 d-flex position-absolute mt-3 justify-content-center p-5 main px-2"
+      class="w-100 d-flex position-absolute mt-3 justify-content-center p-5 main px-2"
     >
-      <div class="d-flex justify-content-center main-container w-100">
-        <div class="cards-container col-3 d-flex flex-column d-none d-sm-block">
+      <div
+        class="d-flex justify-content-between main-container width-sections col-12"
+      >
+        <div
+          class="cards-container col-3 flex-grow-1 d-flex flex-column d-none d-sm-block"
+        >
           <ul class="nav d-flex flex-column">
             <li class="nav-item">
               <a class="nav-link disabled" aria-disabled="true">🏚️ Home</a>
@@ -198,15 +317,15 @@
             </li>
           </ul>
           <nav
-            class="d-flex justify-content-around mt-4 mb-4 w-75"
+            class="px-3 d-flex justify-content-start gap-3 my-4"
             id="Socials"
           >
-            <a href="" class="p-2"><img src="images/twiter.svg" alt="" /></a>
-            <a href="" class="p-2"><img src="images/facebook.svg" alt="" /></a>
-            <a href="" class="p-2"><img src="images/github.svg" alt="" /></a>
-            <a href="" class="p-2"><img src="images/insta.svg" alt="" /></a>
-            <a href="" class="p-2"><img src="images/twitch.svg" alt="" /></a>
-            <a href="" class="p-2"><img src="images/mastodon.svg" alt="" /></a>
+            <a href="" twitter><img src="images/twiter.svg" alt="" /></a>
+            <a href=""><img src="images/facebook.svg" alt="" /></a>
+            <a href=""><img src="images/github.svg" alt="" /></a>
+            <a href=""><img src="images/insta.svg" alt="" /></a>
+            <a href=""><img src="images/twitch.svg" alt="" /></a>
+            <a href=""><img src="images/mastodon.svg" alt="" /></a>
           </nav>
           <ul class="nav d-flex flex-column list-tags">
             <li class="nav-item">
@@ -251,9 +370,30 @@
               </p>
             </div>
           </div>
+          <div class="mt-5">
+            <p>
+              <span
+                ><a class="link-morado" href="">DEV Community</a> A constructive
+                and inclusive social network for software developers. With you
+                every step of your journey.</span
+              >
+            </p>
+            <div class="mt-3">
+              Built on <a class="link-morado" href="">Forem </a>— the
+              <a class="link-morado" href="">open source</a> software that
+              powers <a class="link-morado" href="">DEV</a> and other inclusive
+              communities.
+            </div>
+            <div class="mt-3">
+              Made with love and
+              <a class="link-morado" href="">Ruby on Rails.</a> DEV Community ©
+              2016 - 2024.
+            </div>
+            <p></p>
+          </div>
         </div>
 
-        <div class="cards__container">
+        <div class="cards__container col-lg-5">
           <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <div class="collapse navbar-collapse" id="navbarNav">
@@ -291,9 +431,45 @@
               See the prompts
             </button>
           </div>
+
+          <div class="card text-dark-emphasis">
+            <img
+              src="./images/maincomment.avif"
+              class="card-img-top"
+              alt="💣Not Learning New Things at Work is Destroying Your Career"
+            />
+            <div class="profile pt-3 px-3 d-flex align-items-center gap-1">
+              <img
+                src="./images/anita-olsen.gif"
+                alt="anita olsen"
+                class="rounded-circle profile-image"
+              />
+              <p class="m-0">Lucas Chitolina</p>
+            </div>
+            <div class="card-body px-2">
+              <h5 class="card-title px-5 fw-bold fs-4">
+                💣Not Learning New Things at Work is Destroying Your Career
+              </h5>
+            </div>
+            <div class="px-2 small-text">
+              <ul class="navbar-nav flex-row px-5 gap-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">#programming</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"
+                    >#productivity</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">#career</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div
-          class="cards__container col-3 d-lg-flex flex-column gap-3 d-none d-md-block"
+          class="cards__container col-3 d-lg-flex flex-column flex-grow-1 gap-3 d-none d-md-block"
         >
           <div class="card text-dark-emphasis">
             <div class="card-header bg-white p-3">
